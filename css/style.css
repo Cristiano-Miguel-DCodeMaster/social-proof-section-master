@@ -1,0 +1,124 @@
+*{
+margin: 0;
+padding: 0;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    background-color: var(--White);
+    justify-content: center;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+footer{
+    position: fixed;
+}
+:root{
+    --VeryDarkMagenta: hsl(300, 43%, 22%);
+    --SoftPink: hsl(333, 80%, 67%);
+    --DarkGrayishMagenta: hsl(303, 10%, 53%);
+    --LightGrayishMagenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+h1{
+    color: var(--VeryDarkMagenta);
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.left p{
+    color: var(--DarkGrayishMagenta);
+}
+.right .starM{
+    background-color: var(--LightGrayishMagenta);
+}
+.right .starM p{
+    color: var(--VeryDarkMagenta);
+    font-weight: 400;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.bottom .div{
+background-color: var(--VeryDarkMagenta);
+}
+.bottom .div p{
+color: var(--White);
+}
+.bottom .div .photo{
+    display: flex;
+}
+.bottom .div .photo span{
+    color: var(--SoftPink);
+    font-weight: 500;
+}
+
+@media only screen and (min-width:320px){
+    main{
+        height: fit-content;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
+    }
+    .left p{
+        width: 90%;
+    }
+    
+    .right{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .right .starM{
+        border-radius: 12px;
+        width: 85%;
+        padding: 10px;
+    }
+    .right .starM p{
+    font-size: 15px;
+    font-weight: 900;
+    }
+
+    .bottom{
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 90%;
+    }
+    .bottom .div{
+        padding: 40px;
+        border-radius: 12px;
+    }
+    .bottom .div p{
+    font-size: 15px;
+    }
+    .bottom .div .photo{
+        justify-content:flex-start;
+        gap: 12px;
+    }
+    .bottom .div .photo img{
+        width: 18%;
+        border-radius: 180px;
+    }
+    .bottom .div .photo span{
+        font-weight: 500;
+    }
+    .testimony{
+        text-align: left;
+    }
+}
