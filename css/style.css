@@ -7,7 +7,6 @@ main{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     background-color: var(--White);
     justify-content: center;
     align-items: center;
@@ -16,7 +15,10 @@ main{
     display: none;
 }
 footer{
-    position: fixed;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 :root{
     --VeryDarkMagenta: hsl(300, 43%, 22%);
@@ -62,6 +64,7 @@ color: var(--White);
         height: fit-content;
         padding-top: 50px;
         text-align: center;
+        padding-bottom: 50px;
     }
     .left {
         display: flex;
@@ -154,6 +157,21 @@ color: var(--White);
         width: 100%;
     }
 }
+@media only screen and (min-width:470px){
+    .bottom .div{
+        padding: left 540px;
+    }
+    .bottom .div .photo{
+        width: 50%;
+    }
+    .bottom .div .photo img{
+        width: 25%;
+    }
+    .bottom .div p{
+        font-size: 18px;
+        width: 100%;
+    }
+}
 @media only screen and (min-width:768px){
     .left h1{
         width: 50%;
@@ -161,6 +179,8 @@ color: var(--White);
     .left p{
         width: 60%;
         font-size: 20px;
+    }.right .starM{
+        width: 73%;
     }
     .right .starM .stars{
         padding-bottom: 10px;
@@ -174,15 +194,207 @@ color: var(--White);
 
     .bottom .div{
         padding-left: 50px;
+        width: 70%;
     }
     .bottom .div .photo{
-        width: 50%;
+        width: 45%;
     }
     .bottom .div .photo img{
         width: 25%;
     }
     .bottom .div p{
-        font-size: 30px;
+        font-size: 20px;
+        width: 90%;
+    }
+}
+@media only screen and (min-width:992px){
+    main{
+        height: 100vh;
+    }
+    .top{
+        display: flex;
+        width: 95%;
+        gap: 40px;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items:flex-start;
+        width: 55%;
+    }
+    .left h1{
+        font-size: 45px;
+        text-align: left;
+        width: 80%;
+    }
+    .left p{
+        width: 95%;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .right{
+        transform: translateY(-30px);
+    }
+    .right .starM{                                          
+        display: flex;
+        width: fit-content;
+    }
+    .right .M1{
+        margin-left: -100px;
+    }
+    .right .M2{
+        margin-left: 0px;
+    }
+    .right .M3{
+        margin-left: 50px;
+    }
+    .right .starM .stars img{
+        width: 15%;
+    }
+    .right .starM p{
+    font-size: 11px;
+    font-weight: 900;
+    }
+
+    .bottom{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
         width: 95%;
     }
+    .bottom .div{
+        padding: 40px;
+        padding-left: 30px;
+        border-radius: 12px;
+        width: 35%;
+    }
+    .bottom .div2{
+        transform: translateY(20px);
+    }
+    .bottom .div3{
+        transform: translateY(40px);
+    }
+    .bottom .div p{
+    font-size: 15px;
+    width: 100%;
+    }
+    .bottom .div .photo{
+        width: 80%;
+    }
+    .bottom .div .photo img{
+        width: 20%;
+        border-radius: 180px;
+    }
+    .bottom .div .photo span{
+        font-weight: 500;
+    }
+    .testimony{
+        text-align: left;
+    }
+}
+@media only screen and (min-width:1024px){
+    .top{
+        width: 85%;
+    }
+
+    .right .M1{
+        margin-left: -100px;
+    }
+    .right .M2{
+        margin-left: 0px;
+    }
+    .right .M3{
+        margin-left: 60px;
+    }
+    .right .starM .stars img{
+        width: 15%;
+    }
+    .right .starM p{
+    font-size: 11px;
+    font-weight: 900;
+    }
+
+    .bottom{
+        width: 85%;
+    }
+}
+@media only screen and (min-width:1200px){
+    main{
+        height: 90vh;
+    }
+    .left p{
+        width: 80%;
+    }
+    .right{
+        transform: translateX(50px);
+    }
+    .right .starM{     
+        width: 100%;
+        gap: 30px;
+    }
+}
+@media only screen and (min-width:1400px){
+    main{
+        height: 80vh;
+    }
+    .left p{
+        width: 80%;
+    }
+    .right{
+        transform: translateX(50px);
+    }
+    .right .starM{     
+        width: 100%;
+        gap: 30px;
+    }
+}
+@media only screen and (min-width:1440px){
+    .top{
+        width: 80%;
+    }
+    .left h1{
+        width: 75%;
+    }
+    .left p{
+        width: 80%;
+        font-size: 22px;
+    }
+    .right{
+        transform: translateX(50px);
+        transform: translateY(-34px);
+    }
+    .right .starM{     
+        width: 100%;
+        gap: 30px;
+    }
+    
+    .right .starM .stars img{
+        width: 15%;
+    }
+    .right .starM p{
+    font-size: 11px;
+    font-weight: 900;
+    }
+
+    .bottom{
+        width: 80%;
+    }
+    .bottom .div{
+        padding-left: 40px;
+        width: 25%;
+    }
+    .bottom .div p{
+        font-size: 15px;
+        width: 85%;
+        }
+        .bottom .div .photo{
+            width: 80%;
+        }
+        .bottom .div .photo img{
+            width: 20%;
+            border-radius: 180px;
+        }
 }
