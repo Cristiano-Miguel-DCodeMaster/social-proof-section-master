@@ -70,14 +70,19 @@ color: var(--White);
         align-items: center;
         gap: 7px;
     }
+    .left h1{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
     .left p{
         width: 90%;
+        padding-bottom: 29px;
     }
     
     .right{
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
         justify-content: center;
         align-items: center;
     }
@@ -86,22 +91,26 @@ color: var(--White);
         width: 85%;
         padding: 10px;
     }
+    .right .starM .stars img{
+        width: 5%;
+    }
     .right .starM p{
-    font-size: 15px;
+    font-size: 11px;
     font-weight: 900;
     }
 
     .bottom{
-        padding-top: 20px;
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
         width: 90%;
     }
     .bottom .div{
         padding: 40px;
+        padding-left: 20px;
         border-radius: 12px;
     }
     .bottom .div p{
@@ -109,10 +118,11 @@ color: var(--White);
     }
     .bottom .div .photo{
         justify-content:flex-start;
-        gap: 12px;
+        gap: 16px;
+        padding-bottom: 20px;
     }
     .bottom .div .photo img{
-        width: 18%;
+        width: 15%;
         border-radius: 180px;
     }
     .bottom .div .photo span{
@@ -120,5 +130,59 @@ color: var(--White);
     }
     .testimony{
         text-align: left;
+    }
+}
+@media only screen and (min-width:375px){
+    .left h1{
+        width: 80%;
+    }
+    .left p{
+        width: 80%;
+    }
+    .right .starM p{
+    font-size: 13px;
+    }
+    .bottom .div .photo{
+        gap: 0px;
+        width: 70%;
+    }
+    .bottom .div .photo img{
+        width: 25%;
+    }
+    .bottom .div p{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+@media only screen and (min-width:768px){
+    .left h1{
+        width: 50%;
+    }
+    .left p{
+        width: 60%;
+        font-size: 20px;
+    }
+    .right .starM .stars{
+        padding-bottom: 10px;
+    }
+    .right .starM .stars img{
+        width: 4%;
+    }
+    .right .starM p{
+    font-size: 15px;
+    }
+
+    .bottom .div{
+        padding-left: 50px;
+    }
+    .bottom .div .photo{
+        width: 50%;
+    }
+    .bottom .div .photo img{
+        width: 25%;
+    }
+    .bottom .div p{
+        font-size: 30px;
+        width: 95%;
     }
 }
