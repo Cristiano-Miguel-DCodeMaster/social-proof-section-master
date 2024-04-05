@@ -286,7 +286,6 @@ color: var(--White);
     }
     .bottom .div .photo img{
         width: 20%;
-        border-radius: 180px;
     }
     .bottom .div .photo span{
         font-weight: 500;
@@ -385,16 +384,131 @@ color: var(--White);
     .bottom .div{
         padding-left: 40px;
         width: 25%;
+        height: 20vh;
     }
     .bottom .div p{
-        font-size: 15px;
-        width: 85%;
+        font-size: 18px;
+        width: 105%;
         }
         .bottom .div .photo{
-            width: 80%;
+            width: 65%;
         }
         .bottom .div .photo img{
-            width: 20%;
-            border-radius: 180px;
+            width: 25%;
         }
+}
+@media only screen and (min-width:1600px){
+    .top{
+        width: 76%;
+    }
+    .left h1{
+        width: 75%;
+    }
+    .left p{
+        width: 75%;
+    }
+    .right{
+        transform: translateX(65px);
+    }
+    .bottom{
+        width: 85%;
+    }
+    .bottom .div{
+        width: 23%;
+    }
+    .bottom .div p{
+        width: 96%;
+        }
+}
+@media only screen and (min-width:2000px){
+    .top{
+        width: 76%;
+    }
+    .left h1{
+        width: 75%;
+    }
+    .left p{
+        width: 60%;
+    }
+    .right{
+        transform: translateX(100px);
+    }
+    .right .starM{
+        gap: 25px;
+        width: 110%;
+    }
+    .right .starM .stars{
+        width: 80%;
+    }
+    .right .starM .stars img{
+        width: 14%;
+    }
+    .right .starM p{
+    font-size: 17px;
+    width: 150%;
+    }
+
+    .bottom{
+    width: 85%;
+    }
+    .bottom .div{
+    width: 24%;
+    padding-bottom: 5%;
+    }
+    .bottom .div p{
+    width: 100%;
+    font-size: 22px;
+    }
+    .bottom .div .photo{
+    width: 60%;
+    align-items: center;
+    }
+    .bottom .div .photo img{
+    width: 30%;
+    }
+}
+@media only screen and (min-width:2500px){
+    .top{
+        width: 76%;
+    }
+    .left h1{
+        width: 75%;
+        font-size: 55px;
+    }
+    .left p{
+        width: 65%;
+        font-size: 30px;
+    }
+    .right{
+        transform: translateX(100px);
+    }
+    .right .starM{
+        gap: 25px;
+        width: 110%;
+    }
+    .right .starM .stars img{
+        width: 18%;
+    }
+    .right .starM p{
+    font-size: 22px;
+    }
+
+    .bottom{
+    width: 85%;
+    }
+    .bottom .div{
+    width: 26%;
+    padding-bottom: 5%;
+    }
+    .bottom .div p{
+    width: 100%;
+    font-size: 28px;
+    }
+    .bottom .div .photo{
+    width: 60%;
+    align-items: center;
+    }
+    .bottom .div .photo img{
+    width: 30%;
+    }
 }
